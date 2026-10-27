@@ -1,0 +1,157 @@
+.accountability-section {
+  background-color: #f7f6f0;
+  padding: 6rem 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.accountability-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.accountability-header {
+  margin-bottom: 3.5rem;
+}
+
+.accountability-subtag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #d4a359;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.subtag-line {
+  width: 16px;
+  height: 2px;
+  background-color: #d4a359;
+}
+
+.accountability-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #123023;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+.accountability-subtitle {
+  font-size: 1.1rem;
+  color: #55625c;
+  margin: 0;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 1.25rem;
+  padding: 2.5rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 260px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card-dark {
+  background-color: #123023;
+  color: #ffffff;
+  border: none;
+}
+
+.stat-status {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #738079;
+  text-transform: uppercase;
+}
+
+.stat-card-dark .stat-status {
+  color: #d4a359;
+}
+
+.stat-value {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #123023;
+  margin: 1.5rem 0;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.stat-card-dark .stat-value {
+  color: #d4a359;
+}
+
+.stat-desc {
+  font-size: 0.95rem;
+  color: #55625c;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.stat-card-dark .stat-desc {
+  color: #d0d7d4;
+}
+
+.accountability-footer-note p {
+  font-size: 0.85rem;
+  color: #738079;
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .accountability-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .accountability-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .accountability-title {
+    font-size: 1.85rem;
+  }
+
+  .stat-value {
+    font-size: 3.25rem;
+  }
+
+  .stat-card {
+    min-height: auto;
+    padding: 2rem 1.5rem;
+  }
+}
