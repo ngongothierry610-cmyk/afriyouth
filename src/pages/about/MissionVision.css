@@ -1,0 +1,59 @@
+.mission-vision-section {
+  background-color: #123023;
+  color: #ffffff;
+  padding: 6rem 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.mission-vision-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.mission-vision-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-vision-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #d4a359;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.mission-vision-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.mission-vision-desc {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: #e0e6e3;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .mission-vision-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .mission-vision-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .mission-vision-title {
+    font-size: 2.15rem;
+  }
+}

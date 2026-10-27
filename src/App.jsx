@@ -1,19 +1,17 @@
-import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import WhoWeAre from "./components/WhoWeAre";
-import Services from "./components/Services";
-import Programs from "./components/Programs";
-import Accountability from "./components/Accountability";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About/About";
 
 export default function App() {
   return (
     <div className="App">
       <Navbar />
-      <Hero />
-      <WhoWeAre />
-      <Services />
-      <Programs />
-      <Accountability />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
 }
