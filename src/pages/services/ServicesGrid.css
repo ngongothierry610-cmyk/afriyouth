@@ -1,0 +1,209 @@
+.services-grid-section {
+  background-color: #f7f6f0;
+  padding: 6rem 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.services-grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-grid-header {
+  margin-bottom: 3.5rem;
+}
+
+.services-grid-subtag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #d4a359;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.subtag-line {
+  width: 16px;
+  height: 2px;
+  background-color: #d4a359;
+}
+
+.services-grid-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #123023;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+.services-grid-subtitle {
+  font-size: 1.1rem;
+  color: #55625c;
+  margin: 0;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+.services-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 1.25rem;
+  padding: 2.5rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 380px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.08);
+}
+
+.service-card-dark {
+  background-color: #123023;
+  color: #ffffff;
+  border: none;
+}
+
+.service-card-icon-box {
+  width: 44px;
+  height: 44px;
+  background-color: #f3efe6;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.service-card-dark .service-card-icon-box {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.service-arrow {
+  font-size: 1.25rem;
+  color: #123023;
+  font-weight: bold;
+}
+
+.service-card-dark .service-arrow {
+  color: #d4a359;
+}
+
+.service-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex-grow: 1;
+}
+
+.service-card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #123023;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.service-card-dark .service-card-title {
+  color: #ffffff;
+}
+
+.service-card-desc {
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: #55625c;
+  margin: 0;
+}
+
+.service-card-dark .service-card-desc {
+  color: #d0d7d4;
+}
+
+.service-card-tags {
+  font-size: 0.85rem;
+  color: #738079;
+  margin-top: 0.5rem;
+  display: block;
+  line-height: 1.4;
+}
+
+.service-card-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service-card-dark .service-card-footer {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #123023;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.service-link span {
+  font-size: 0.9rem;
+}
+
+.dark-link {
+  color: #ffffff;
+}
+
+.dark-link span {
+  color: #d4a359;
+}
+
+.service-link:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+  .services-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .services-grid-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .services-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .services-grid-title {
+    font-size: 1.85rem;
+  }
+
+  .service-card {
+    min-height: auto;
+    padding: 2rem 1.5rem;
+  }
+}

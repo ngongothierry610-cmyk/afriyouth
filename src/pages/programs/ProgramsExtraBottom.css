@@ -1,0 +1,207 @@
+.programs-extra-bottom-wrapper {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.programs-extra-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.programs-subtag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #d4a359;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.subtag-line {
+  width: 16px;
+  height: 2px;
+  background-color: #d4a359;
+}
+
+.programs-section-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #123023;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+.programs-section-subtitle {
+  font-size: 1.1rem;
+  color: #55625c;
+  margin: 0;
+  max-width: 720px;
+  line-height: 1.5;
+}
+
+/* ------------------ NEXT STEPS SECTION ------------------ */
+.programs-steps-section {
+  background-color: #f7f6f0;
+  padding: 6rem 3rem;
+}
+
+.programs-steps-header {
+  margin-bottom: 3.5rem;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.step-card {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-number-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.step-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #123023;
+  line-height: 1;
+}
+
+.step-arrow {
+  font-size: 1.35rem;
+  color: #123023;
+  line-height: 1;
+}
+
+.step-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #123023;
+  margin: 0 0 0.85rem 0;
+  letter-spacing: -0.01em;
+}
+
+.step-desc {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: #55625c;
+  margin: 0;
+}
+
+/* ------------------ OPPORTUNITIES SECTION ------------------ */
+.programs-opportunities-section {
+  background-color: #e8ede9;
+  padding: 6rem 3rem;
+}
+
+.programs-opportunities-header {
+  margin-bottom: 3.5rem;
+}
+
+.opportunities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.opportunity-card {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.opportunity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.08);
+}
+
+.opportunity-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #738079;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.opportunity-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #123023;
+  margin: 0 0 1rem 0;
+  line-height: 1.25;
+}
+
+.opportunity-desc {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: #55625c;
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+.opportunity-footer {
+  padding-top: 1rem;
+}
+
+.opportunity-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #123023;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.opportunity-link:hover {
+  opacity: 0.8;
+}
+
+/* ------------------ MEDIA QUERIES ------------------ */
+@media (max-width: 1024px) {
+  .steps-grid,
+  .opportunities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .programs-steps-section,
+  .programs-opportunities-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .steps-grid,
+  .opportunities-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .programs-section-title {
+    font-size: 1.85rem;
+  }
+
+  .opportunity-card {
+    min-height: auto;
+  }
+}

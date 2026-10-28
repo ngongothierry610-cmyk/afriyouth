@@ -33,7 +33,7 @@ export default function Navbar() {
         <Link to="/about" className={isActive("/about") ? "active" : ""} onClick={handleLinkClick}>
           About
         </Link>
-        <Link to="/service" className={isActive("/service") ? "active" : ""} onClick={handleLinkClick}>
+        <Link to="/services" className={isActive("/services") ? "active" : ""} onClick={handleLinkClick}>
           Services
         </Link>
         <Link to="/programs" className={isActive("/programs") ? "active" : ""} onClick={handleLinkClick}>
