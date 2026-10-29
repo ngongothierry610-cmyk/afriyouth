@@ -1,0 +1,131 @@
+.impact-partnerships-section {
+  background-color: #123023;
+  color: #ffffff;
+  padding: 6rem 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.impact-partnerships-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: flex-start;
+}
+
+.impact-partnerships-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.impact-partnerships-subtag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #d4a359;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.impact-partnerships-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.impact-partnerships-desc {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #e0e6e3;
+  margin: 0 0 1.25rem 0;
+  max-width: 520px;
+}
+
+.impact-partnerships-action {
+  margin-top: 1rem;
+}
+
+.partner-with-us-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  color: #123023;
+  border-radius: 8px;
+  padding: 0.85rem 1.6rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.partner-with-us-btn span {
+  color: #123023;
+}
+
+.partner-with-us-btn:hover {
+  background-color: #f7f6f0;
+  transform: translateY(-2px);
+}
+
+.impact-partnerships-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.collaboration-item {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.collaboration-item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.collaboration-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.75rem 0;
+  letter-spacing: -0.01em;
+}
+
+.collaboration-desc {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #d0d7d4;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .impact-partnerships-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .impact-partnerships-title {
+    font-size: 2.35rem;
+  }
+
+  .impact-partnerships-desc {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .impact-partnerships-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .impact-partnerships-title {
+    font-size: 1.95rem;
+  }
+
+  .collaboration-title {
+    font-size: 1.35rem;
+  }
+}

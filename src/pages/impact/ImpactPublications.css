@@ -1,0 +1,176 @@
+.impact-publications-section {
+  background-color: #f7f6f0;
+  padding: 6rem 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.impact-publications-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.impact-publications-header {
+  margin-bottom: 3.5rem;
+}
+
+.impact-subtag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #d4a359;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.subtag-line {
+  width: 16px;
+  height: 2px;
+  background-color: #d4a359;
+}
+
+.impact-publications-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #123023;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+.impact-publications-subtitle {
+  font-size: 1.1rem;
+  color: #55625c;
+  margin: 0;
+  max-width: 720px;
+  line-height: 1.5;
+}
+
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.publication-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.publication-card {
+  border-radius: 1.25rem;
+  padding: 2.5rem 2rem;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.publication-card:hover {
+  transform: translateY(-4px);
+}
+
+.dark-card {
+  background-color: #123023;
+  color: #ffffff;
+}
+
+.gold-card {
+  background-color: #e5b365;
+  color: #123023;
+}
+
+.pub-card-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dark-card .pub-card-tag {
+  color: #d4a359;
+}
+
+.gold-card .pub-card-tag {
+  color: #123023;
+}
+
+.pub-card-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.pub-card-arrow {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.dark-card .pub-card-arrow {
+  color: #d4a359;
+}
+
+.gold-card .pub-card-arrow {
+  color: #123023;
+}
+
+.pub-meta-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.pub-type {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #123023;
+  text-transform: uppercase;
+}
+
+.pub-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #55625c;
+  margin: 0;
+}
+
+.pub-status {
+  font-size: 0.82rem;
+  color: #738079;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* ------------------ MEDIA QUERIES ------------------ */
+@media (max-width: 1024px) {
+  .publications-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .impact-publications-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .publications-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .impact-publications-title {
+    font-size: 1.85rem;
+  }
+
+  .publication-card {
+    min-height: 220px;
+  }
+}

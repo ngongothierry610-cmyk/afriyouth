@@ -1,0 +1,212 @@
+.impact-purpose-cta-wrapper {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.impact-purpose-container,
+.impact-cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.impact-subtag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #d4a359;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.subtag-line {
+  width: 16px;
+  height: 2px;
+  background-color: #d4a359;
+}
+
+/* ------------------ PURPOSE SECTION ------------------ */
+.impact-purpose-section {
+  background-color: #ffffff;
+  padding: 6rem 3rem;
+}
+
+.impact-purpose-header {
+  margin-bottom: 3.5rem;
+}
+
+.impact-purpose-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #123023;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+.impact-purpose-subtitle {
+  font-size: 1.1rem;
+  color: #55625c;
+  margin: 0;
+  max-width: 720px;
+  line-height: 1.5;
+}
+
+.purpose-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.purpose-step-card {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-number-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.step-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #123023;
+  line-height: 1;
+}
+
+.step-arrow {
+  font-size: 1.35rem;
+  color: #123023;
+  line-height: 1;
+}
+
+.step-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #123023;
+  margin: 0 0 0.85rem 0;
+  letter-spacing: -0.01em;
+}
+
+.step-desc {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: #55625c;
+  margin: 0;
+}
+
+/* ------------------ CTA SECTION ------------------ */
+.impact-cta-section {
+  background-color: #e8ede9;
+  padding: 5rem 3rem 6rem 3rem;
+}
+
+.impact-cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.impact-cta-left {
+  max-width: 650px;
+}
+
+.cta-subtag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #123023;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.impact-cta-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #123023;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+.impact-cta-subtitle {
+  font-size: 1.1rem;
+  color: #55625c;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.impact-cta-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.start-conversation-cta-btn {
+  background-color: #123023;
+  color: #ffffff;
+  padding: 0.9rem 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.start-conversation-cta-btn span {
+  color: #d4a359;
+}
+
+.start-conversation-cta-btn:hover {
+  background-color: #1a4432;
+  transform: translateY(-2px);
+}
+
+.impact-cta-note {
+  font-size: 0.88rem;
+  color: #738079;
+  margin: 0;
+}
+
+/* ------------------ MEDIA QUERIES ------------------ */
+@media (max-width: 1024px) {
+  .purpose-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .impact-cta-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .impact-purpose-section,
+  .impact-cta-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .purpose-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .impact-purpose-title,
+  .impact-cta-title {
+    font-size: 1.85rem;
+  }
+}

@@ -39,7 +39,7 @@ export default function Navbar() {
         <Link to="/programs" className={isActive("/programs") ? "active" : ""} onClick={handleLinkClick}>
           Programs
         </Link>
-        <Link to="/blog" className={isActive("/blog") ? "active" : ""} onClick={handleLinkClick}>
+        <Link to="/impact" className={isActive("/impact") ? "active" : ""} onClick={handleLinkClick}>
           Impact & Resources
         </Link>
         <Link to="/contact" className={isActive("/contact") ? "active" : ""} onClick={handleLinkClick}>

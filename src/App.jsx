@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About/About";
 import Services from "./pages/services/services";
 import Programs from "./pages/programs/programs";
+import Impact from "./pages/impact/impact";
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/programs" element={<Programs />} />
-        
+        <Route path="/impact" element={<Impact />} />
       </Routes>
     </div>
   );

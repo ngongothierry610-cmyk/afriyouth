@@ -1,0 +1,174 @@
+.impact-hero-section {
+  background-color: #f7f6f0;
+  padding: 5rem 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.impact-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.impact-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.impact-hero-subtag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #123023;
+  text-transform: uppercase;
+}
+
+.impact-hero-title {
+  font-size: 3.25rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #123023;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.impact-hero-description {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #55625c;
+  margin: 0;
+  max-width: 90%;
+}
+
+.impact-hero-action {
+  margin-top: 0.5rem;
+}
+
+.start-conversation-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #123023;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 0.85rem 1.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.start-conversation-btn span {
+  color: #d4a359;
+}
+
+.start-conversation-btn:hover {
+  background-color: #1a4432;
+  transform: translateY(-2px);
+}
+
+.impact-hero-card {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: #123023;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+}
+
+.impact-hero-image-wrapper {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+}
+
+.impact-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.impact-hero-card-banner {
+  padding: 1.75rem 2rem;
+  background-color: #123023;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.impact-hero-card-sub {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #d4a359;
+  margin-bottom: 0.35rem;
+}
+
+.impact-hero-card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.impact-hero-card-icon {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  height: 28px;
+}
+
+.impact-hero-card-icon .bar {
+  width: 6px;
+  background-color: #d4a359;
+  border-radius: 2px;
+}
+
+.impact-hero-card-icon .bar-1 { height: 40%; }
+.impact-hero-card-icon .bar-2 { height: 75%; }
+.impact-hero-card-icon .bar-3 { height: 100%; }
+
+@media (max-width: 992px) {
+  .impact-hero-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .impact-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .impact-hero-description {
+    max-width: 100%;
+  }
+
+  .impact-hero-image-wrapper {
+    height: 320px;
+  }
+}
+
+@media (max-width: 576px) {
+  .impact-hero-section {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .impact-hero-title {
+    font-size: 2rem;
+  }
+
+  .impact-hero-image-wrapper {
+    height: 260px;
+  }
+
+  .impact-hero-card-banner {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .impact-hero-card-title {
+    font-size: 1.15rem;
+  }
+}
