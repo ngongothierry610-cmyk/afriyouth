@@ -6,6 +6,7 @@ import About from "./pages/About/About";
 import Services from "./pages/services/services";
 import Programs from "./pages/programs/programs";
 import Impact from "./pages/impact/impact";
+import Contact from "./pages/contact/contact";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/programs" element={<Programs />} />
         <Route path="/impact" element={<Impact />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );

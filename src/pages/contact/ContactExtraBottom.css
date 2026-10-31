@@ -1,0 +1,199 @@
+.contact-extra-bottom-wrapper {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.contact-extra-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-subtag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #d4a359;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.subtag-line {
+  width: 16px;
+  height: 2px;
+  background-color: #d4a359;
+}
+
+.contact-section-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #123023;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+.contact-section-subtitle {
+  font-size: 1.1rem;
+  color: #55625c;
+  margin: 0;
+  max-width: 720px;
+  line-height: 1.5;
+}
+
+/* ------------------ JOURNEY SECTION ------------------ */
+.contact-journey-section {
+  background-color: #f7f6f0;
+  padding: 6rem 3rem;
+}
+
+.contact-section-header {
+  margin-bottom: 3.5rem;
+}
+
+.journey-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.journey-step-card {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-number-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.step-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #123023;
+  line-height: 1;
+}
+
+.step-arrow {
+  font-size: 1.35rem;
+  color: #123023;
+  line-height: 1;
+}
+
+.step-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #123023;
+  margin: 0 0 0.85rem 0;
+  letter-spacing: -0.01em;
+}
+
+.step-desc {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: #55625c;
+  margin: 0;
+}
+
+/* ------------------ FAQ SECTION ------------------ */
+.contact-faq-section {
+  background-color: #e8ede9;
+  padding: 6rem 3rem;
+}
+
+.contact-faq-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: flex-start;
+}
+
+.contact-faq-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-subtag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #123023;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.contact-faq-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #123023;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.contact-faq-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-faq-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.faq-question {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #123023;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #55625c;
+  margin: 0;
+}
+
+/* ------------------ MEDIA QUERIES ------------------ */
+@media (max-width: 992px) {
+  .journey-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-faq-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contact-faq-title {
+    font-size: 2.35rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-journey-section,
+  .contact-faq-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .journey-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-section-title {
+    font-size: 1.85rem;
+  }
+
+  .contact-faq-title {
+    font-size: 1.95rem;
+  }
+}
